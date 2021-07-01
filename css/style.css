@@ -52,3 +52,15 @@ padding-left: 16px;
     left:90px;
     top:135px;
 }
+
+@media (max-width: 760px){
+    body {
+        background: green;
+    }
+}
+
+@media (max-width: 420px){
+    body{
+        background: yellow;
+    }
+}
