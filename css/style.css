@@ -2,65 +2,162 @@
 
 *{
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-body{
+html{
+    /* font-size: 16px; ES ASI POR DEFECTO*/ 
+}
+
+header p{
+    background-color: #1CD1B0;
+    
+    padding: 10px;
+}
+
+header div{
+    display: flex;
+    background-color: #00669F;
+    align-items: center;
+    padding: 10px;
+}
+ header div img{
+     height: 70px;
+}
+
+header div h1{
+     color: white;
+     font-weight: normal;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: #001D2D;
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    margin:10px;
+    color:white;
+}
+.cards{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .tarjeta {
 width: 300px;
-height: 529px;
 background-color: #f3f3f3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-top-left-radius: 4%;
 border-top-right-radius: 4%;
 position:relative;
-margin:30px;
+margin:25px;
+padding-bottom: 20px;
 }
 
-
-.informacion p{
-width: 267px;
-font-size: 16px;
-padding-left: 16px;
+.imagen{
+    position: relative;
 }
+.imagen img{
+    width:100%;
+}
+.imagen span{
+    color: red;
+    font-size: 2.5rem;
+    display: block;
+    position:absolute;
+    top:15px;
+    left:15px;
+
+}
+
+.informacion{ 
+    text-align: center;
+    position:relative;
+    
+}
+
 
 .informacion h2{
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: normal;
-    padding-top: 50px; /*revisar esto*/
+    padding:10px;
+    padding-top: 65px;
 }
+
+.informacion p{
+
+    font-size: 1rem;
+    padding: 20px;
+    text-align: left;
+    }
 
 .informacion button{
     height: 49px;
     width: 129px;
+    font-size: 1.2rem;
     color:white;
     background-color: #00669F;
-    
+    border: none;
+    left: 70px;
 }
-.boton{ 
-    text-align: center;
-}
+
 
 .logo{
     position: absolute;
+    width:110px;
     border-radius: 50%;
-    left:90px;
-    top:135px;
+    left:calc(50% - 55px);
+    top:-55px;
 }
 
-@media (max-width: 760px){
-    body {
-        background: green;
+footer{
+    background-color: #00669F;
+    color:white;
+    padding: 30px;
+    text-align: center;
+}
+
+@media (max-width: 1400px){
+    
+    .tarjeta{
+        width: 35%;
+
     }
 }
 
-@media (max-width: 420px){
-    body{
-        background: yellow;
+@media (max-width: 780px){
+    
+    .tarjeta{
+        width: 35%;
     }
+
+    .informacion h2{
+        font-size: 1.8rem;
+        
+    }
+
+    .informacion p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px){
+    
+    .tarjeta{
+        width: 60%;
+                    
+        }
+    
+        .informacion p{
+            font-size: 0.7rem;
+        }
+
+        .informacion h2{
+            font-size: 1.6rem;
 }
