@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Añadi tu super!</title>
+</head>
+<body>
+    <header>
+        <p>20% de descuento en todos los pruductos</p>
+        <div>
+            <img src="../img/Tienda.PNG" alt="Logo tienda">
+            <h1>Tienda Superheroes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <h1>Añadí tu super!</h1>
+            <h3> Agregá tu personaje favorito completando las opciones</h3>
+            <form action="POST">
+                <div class="cols">
+                <div class="col1">
+                    <label class="labPpal" for="">*Nombre</label>
+                    <input type="text" name="nombre"></input>
+                    <label class="labPpal" for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha"></input>
+                    <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Descripción"></textarea> 
+                </div>
+                <div class="col2">
+                    <label class="labPpal" for="">Especie</label>
+                    <input type="text" name="especie"></input>
+                    <label class="labPpal" for="">Agregar foto</label>
+                    <input type="file">
+                    <label class="labPpal" for="">Poderes</label>
+                        <ul>
+                            <li><input type="checkbox" value="volar" name="poderes">
+                                <label for="">Volar</label></li>
+                            <li><input type="checkbox" value="superint" name="poderes">
+                                <label for="">Superinteligencia</label></li>
+                            <li><input type="checkbox"value="vista" name="poderes">
+                                <label for="">Vista de rayo láser</label></li>
+                            <li><input type="checkbox" value="billetera" name="poderes">
+                                <label for="">Billetera Gorda</label></li>
+                        </ul>
+                        <br>
+                    <label class="labPpal" for="">Tipo de Personaje</label>
+                        <ul>
+                            <li><input type="radio" name="tipo" value="heroe">
+                                <label for="">Héroe / Heroina</label></li>
+                            <li><input type="radio" name="tipo" value="heroe">
+                                <label for="">Héroe / Heroina</label></li>
+                        </ul>
+                </div>
+            </div>
+            <button type="submit">Añadir</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
